@@ -1,5 +1,7 @@
 #include<stdio.h>
 
+static int n;
+
 void Fibonacci(int first, int second, int i)
 {
     if(i<=n && i>2)
@@ -20,7 +22,6 @@ void Fibonacci(int first, int second, int i)
 
 void main()
 {
-    static int n;
     printf("Enter the number of Fibonacci Numbers: ");
     scanf("%d", &n);
     Fibonacci(1,1,1);
